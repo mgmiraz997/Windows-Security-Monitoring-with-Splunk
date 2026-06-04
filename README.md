@@ -1,3 +1,2 @@
 # Windows-Security-Monitoring-with-Splunk
-CSE 802 Lab 
-Roll: 60041
+CSE 802 Lab | Roll: 60041
