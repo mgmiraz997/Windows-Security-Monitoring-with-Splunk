@@ -23,7 +23,18 @@ ii) From the Windows server 2019(Red Team), the AtomicRedTeam automeically gener
 # Part 1: Istalling necessary OSs
 # Step 1:
 i) First we need to install both Kali/ Ubuntu OS and Windows server 2019
-ii) 
+ii) Both should be an ISO file so that we can install it in our Virtual Machine
+iii) Kali linux: https://www.kali.org/get-kali/#kali-installer-images | windows server 2019: https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019  |  VMWare: https://getintopc.com/softwares/virtualization/vmware-workstation-pro-2023-free-download/
+iv) After installation, we need to cofigure our both machines. below I am giving the minimum requiremes to set for both of the machines
+
+kali machine
+---------------
+<img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/5c353c9f-69fd-4c47-b791-33ef99e723b9" />
+
+Windows server 2019
+------------------------
+<img width="1920" height="1080" alt="Screenshot (183)" src="https://github.com/user-attachments/assets/7c410ffc-fcf5-49ae-8922-c8a11f684e64" />
+
 
 
 
