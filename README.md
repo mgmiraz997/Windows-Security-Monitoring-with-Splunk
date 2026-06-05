@@ -8,7 +8,7 @@ In this project I will show how to:
 i) Install all the Virtual Machines containg Kali Linux/Ubuntu, Windows Server 2019
 ii) Splunk, Splunk Forwarder, AtomicRedTeam, Sysmon
 iii) Other necessary softwares, extentions and commands
-iv) Simulating the AtomicRed Team attack: T1003.001 [ (Persistence) | Scheduled Task ] , 
+iv) Simulating the AtomicRed Team attack: T1003.001 { (Persistence) | Scheduled Task } , 
 
 The project will contain different parts adn each part will contain different steps which help us to go further step by step setup to analyzing different attacks
 
