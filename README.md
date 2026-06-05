@@ -1,5 +1,5 @@
 # Windows-Security-Monitoring-with-Splunk
-CSE 802 Lab | Roll: 60041
+# CSE 802 Lab | Name: Mahmudul Gony Miraz | Roll: 60041
 
 # 1. Introduction:
 In this project, we will discuss the complete guideline that how to analyze a machine if it faces the (5 different types of attacks) with the help of Splunk Enterprise, Sysmon, AtomicRedTeam and other necessary metarials to analyze the complete Offensive and Defensive security to analyze different attacks
