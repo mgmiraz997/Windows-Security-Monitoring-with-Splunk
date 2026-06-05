@@ -120,6 +120,21 @@ i) Now we need to Install AtomicRedTeam so that we can simulate different types 
  ii) There are different types of attacks in here we will show specific 5 attacks in here (T1053.005, T1218.005, T1003.001, T1059.001, T1112)
  <img width="1918" height="878" alt="Atomic Red team Attack Techniques(20)" src="https://github.com/user-attachments/assets/40437aed-3829-4ac6-9076-715c27e13695" />
 
+iii) Now we are all set to perform our all 5 attacks but before performing it, we need to know the 1. Hostname of my Windows Server 2019 and the Kali machine IP from our kali machine
+<img width="1918" height="878" alt="Splunk attack simulation starting 2 (23)" src="https://github.com/user-attachments/assets/f6d537ca-cce1-44df-bdad-7757fd87ae26" />
+<img width="1918" height="878" alt="Splunk attack simulation starting 1  (22)" src="https://github.com/user-attachments/assets/94e2f870-2832-4d15-a3fd-ffc1b5ab5643" />
+
+iv) Here is a small demonstration of all the Splunk Dashboard logs of my Windows Server 2019
+<img width="1918" height="878" alt="Splunk Dashboard logs of Windows Server (21)" src="https://github.com/user-attachments/assets/15a86a48-01f2-42eb-b5cc-44f4499028c7" />
+
+v) Here you can see that I am testing to call all the logs of my windows server with the help of my windows machine hostname
+<img width="1918" height="878" alt="Log Checking (24)" src="https://github.com/user-attachments/assets/3282e644-ac99-4e0f-a309-64fbfb68994a" />
+
+# Part 4: Attack Simulation
+---------------------------------
+
+# Step 1:
+
 
 
 
