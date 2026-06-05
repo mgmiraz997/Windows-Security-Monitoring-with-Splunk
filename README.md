@@ -35,7 +35,20 @@ Windows server 2019
 ------------------------
 <img width="1920" height="1080" alt="Screenshot (183)" src="https://github.com/user-attachments/assets/7c410ffc-fcf5-49ae-8922-c8a11f684e64" />
 
-Then
+# Stpe 2:
+
+i) After installation of OS we need to check the IP Address of the Kali machine
+<img width="1918" height="878" alt="kali ip (1)" src="https://github.com/user-attachments/assets/2171b89c-3872-4a73-a537-40d990108a7f" />
+
+ii) Then we need to install and set up the Spllunk in our kali machine
+<img width="1918" height="878" alt="kali splunk install 1 (2)" src="https://github.com/user-attachments/assets/863662b0-12cf-4ca5-8db2-4ba56019fa1e" />
+<img width="1918" height="878" alt="kali splunk install 1 (3)" src="https://github.com/user-attachments/assets/b68a1803-5dd1-4bde-ae1b-7023877b6cd8" />
+<img width="1918" height="878" alt="kali splunk install 1 (4)" src="https://github.com/user-attachments/assets/b9d802fe-bdf9-4e96-a130-4252e2101016" />
+
+iii) Now we need to setup the Splunk in our kali machine
+<img width="1918" height="878" alt="starting splunk (5)" src="https://github.com/user-attachments/assets/9581a754-1155-4f3f-b881-ad312b2140dd" />
+
+
 
 
 
