@@ -20,21 +20,26 @@ i) From here as we can see that the after successful installation of Splunk in k
 ii) From the Windows server 2019(Red Team), the AtomicRedTeam automeically generation differnet types of attacks with the help of commands and these attacks were forwarding with the help of Splunk Forwarder. These attacked logs were forward to kali machine and with the help of different queries, we were able to analyze different attacks and storing all the results in the Splunk Dashboards
 
 # 3. Configuration
+
 # Part 1: Istalling necessary OSs
+-----------------------------------
+
 # Step 1:
 i) First we need to install both Kali/ Ubuntu OS and Windows server 2019
 ii) Both should be an ISO file so that we can install it in our Virtual Machine
 iii) Kali linux: https://www.kali.org/get-kali/#kali-installer-images | windows server 2019: https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019  |  VMWare: https://getintopc.com/softwares/virtualization/vmware-workstation-pro-2023-free-download/
 iv) After installation, we need to cofigure our both machines. below I am giving the minimum requiremes to set for both of the machines
 
-# Part 2: Configuration
+# Part 2: Kali Machine Configuration
+-----------------------------------------
+
 # Step 1
-kali machine
----------------
+kali machine:
+
 <img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/5c353c9f-69fd-4c47-b791-33ef99e723b9" />
 
-Windows server 2019
-------------------------
+Windows server 2019:
+
 <img width="1920" height="1080" alt="Screenshot (183)" src="https://github.com/user-attachments/assets/7c410ffc-fcf5-49ae-8922-c8a11f684e64" />
 
 # Stpe 2:
@@ -62,7 +67,10 @@ vi) Now we need to import the port 9997 so that our Kali machine can commuicate 
 <img width="1918" height="878" alt="enabling port 9997 2 (10)" src="https://github.com/user-attachments/assets/2463b57e-4849-4cf5-aaad-a56be6db9199" />
 <img width="1918" height="878" alt="enabling port 9997 2 (11)" src="https://github.com/user-attachments/assets/011c0551-4ded-4437-9cb3-18f0e4f1741e" />
 
-# Step 3:
+# Part 3: Windows Server 2019 Configuration
+---------------------------------------------
+
+# Step 1: 
 
 i) After configuring our kali machine, we need to configure our windows server 2019
 <img width="1920" height="1080" alt="Setting up windows server (12)" src="https://github.com/user-attachments/assets/c6aae756-ee8c-4b8b-8d2d-b086ca8790dc" />
@@ -71,8 +79,41 @@ ii) In the windows server, we need to install the Sysmon
 <img width="1920" height="1080" alt="Sysmon install  1 (13)" src="https://github.com/user-attachments/assets/b3c4268e-5e1c-449a-9e1f-4d8fee09f809" />
 <img width="1920" height="1080" alt="Sysmon install  2 (14)" src="https://github.com/user-attachments/assets/8e174783-1cc5-4b34-8d0a-cdaa0397b9a8" />
 
+iii) To cross check the Sysmon has been actually installed or not, we need to check it in: Services and Windows Event Viewer
+<img width="1920" height="1080" alt="Sysmon install  3 (15)" src="https://github.com/user-attachments/assets/6e828023-8beb-429d-ab48-a5a003ece9e9" />
+<img width="1920" height="1080" alt="Sysmon install  4 (16)" src="https://github.com/user-attachments/assets/440b6d66-b78c-4da3-88f6-97993e0498bd" />
 
+# Step 2:
 
+i) Next we need to install the Splunk Forwarder so that the Windows server can forward the logs to the kali machine
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 1)" src="https://github.com/user-attachments/assets/0011a617-984a-4720-baf0-95da3752ea71" />
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 2)" src="https://github.com/user-attachments/assets/91a02963-ad92-44ee-ab73-8e20ac3522ee" />
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 3)" src="https://github.com/user-attachments/assets/a657d41e-7e7b-42b1-a282-cfaeffcb8f08" />
+
+iv) Here we need to select the (Local System) instead of (Virtual Account)
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 4)" src="https://github.com/user-attachments/assets/a0523c9e-430c-4c04-9238-28bfefb96f17" />
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 5)" src="https://github.com/user-attachments/assets/4a92d924-799d-486d-a8b1-1b25d77bfd3a" />
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 6)" src="https://github.com/user-attachments/assets/3ebd2bef-987c-45d2-a88c-f22f5d02ae3d" />
+
+v) Now we need to provide the username and password
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 7)" src="https://github.com/user-attachments/assets/6af74f6f-9301-46f4-989e-1b5d03cfcc7c" />
+
+vi) After that we need to insert the Deployment server: IP + Port and Receiving indexer: IP + Port
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 8)" src="https://github.com/user-attachments/assets/09257db2-915c-4be6-a70f-8d3a2f64b403" />
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 9)" src="https://github.com/user-attachments/assets/ef5aee37-fb0b-469a-b0a9-4762b82f2554" />
+
+vii) Now just install the Splunk Forwarder
+<img width="1920" height="1080" alt="Splunk Forwarding install (18 10)" src="https://github.com/user-attachments/assets/90d04284-224e-4f55-a991-5af68296de7c" />
+
+viii) For Corss checking the Splunk forwarder has been successfully installed or not we will check it from: Windows Services
+<img width="1920" height="1080" alt="Splunk Forwarding receiving index2 (18)" src="https://github.com/user-attachments/assets/bcf9cab2-3d7d-4065-9901-3cafeb34eaaf" />
+
+ix) Here we can see the active forwarding ports and IPs
+<img width="1920" height="1080" alt="Splunk Forwarding receiving index(17)" src="https://github.com/user-attachments/assets/94ec0e60-8547-4aac-86cd-8a2dbe37ccc1" />
+
+# Step 3
+
+i) 
 
 
 
