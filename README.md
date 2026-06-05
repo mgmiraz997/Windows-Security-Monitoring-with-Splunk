@@ -27,6 +27,8 @@ ii) Both should be an ISO file so that we can install it in our Virtual Machine
 iii) Kali linux: https://www.kali.org/get-kali/#kali-installer-images | windows server 2019: https://www.microsoft.com/en-us/evalcenter/download-windows-server-2019  |  VMWare: https://getintopc.com/softwares/virtualization/vmware-workstation-pro-2023-free-download/
 iv) After installation, we need to cofigure our both machines. below I am giving the minimum requiremes to set for both of the machines
 
+# Part 2: Configuration
+# Step 1
 kali machine
 ---------------
 <img width="1920" height="1080" alt="Screenshot (182)" src="https://github.com/user-attachments/assets/5c353c9f-69fd-4c47-b791-33ef99e723b9" />
@@ -47,9 +49,27 @@ ii) Then we need to install and set up the Spllunk in our kali machine
 
 iii) Now we need to setup the Splunk in our kali machine
 <img width="1918" height="878" alt="starting splunk (5)" src="https://github.com/user-attachments/assets/9581a754-1155-4f3f-b881-ad312b2140dd" />
+<img width="1918" height="878" alt="auto start splunk (6)" src="https://github.com/user-attachments/assets/5892dfa5-5aec-4a11-a996-1ec0dd4f231e" />
 
+iv) Now we are ready to log in to our Splunk Enterprise to analyze all the attacks happens in our windows server 2019
+<img width="1918" height="878" alt="accessing splunk (7)" src="https://github.com/user-attachments/assets/0ac84c11-fee7-4a92-99f8-a104e89dd75f" />
 
+v) After login, we will see this type of interface
+<img width="1918" height="878" alt="splunk interface (8)" src="https://github.com/user-attachments/assets/820892cc-458a-4379-aa7d-7a62bcad9eba" />
 
+vi) Now we need to import the port 9997 so that our Kali machine can commuicate with the winsows server
+<img width="1918" height="878" alt="enabling port 9997 (9)" src="https://github.com/user-attachments/assets/c5c31358-11dd-4061-86d1-939093cc2661" />
+<img width="1918" height="878" alt="enabling port 9997 2 (10)" src="https://github.com/user-attachments/assets/2463b57e-4849-4cf5-aaad-a56be6db9199" />
+<img width="1918" height="878" alt="enabling port 9997 2 (11)" src="https://github.com/user-attachments/assets/011c0551-4ded-4437-9cb3-18f0e4f1741e" />
+
+# Step 3:
+
+i) After configuring our kali machine, we need to configure our windows server 2019
+<img width="1920" height="1080" alt="Setting up windows server (12)" src="https://github.com/user-attachments/assets/c6aae756-ee8c-4b8b-8d2d-b086ca8790dc" />
+
+ii) In the windows server, we need to install the Sysmon
+<img width="1920" height="1080" alt="Sysmon install  1 (13)" src="https://github.com/user-attachments/assets/b3c4268e-5e1c-449a-9e1f-4d8fee09f809" />
+<img width="1920" height="1080" alt="Sysmon install  2 (14)" src="https://github.com/user-attachments/assets/8e174783-1cc5-4b34-8d0a-cdaa0397b9a8" />
 
 
 
