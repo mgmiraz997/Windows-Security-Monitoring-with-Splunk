@@ -8,7 +8,7 @@ In this project I will show how to:
 i) Install all the Virtual Machines containg Kali Linux/Ubuntu, Windows Server 2019
 ii) Splunk, Splunk Forwarder, AtomicRedTeam, Sysmon
 iii) Other necessary softwares, extentions and commands
-iv) Simulating the AtomicRed Team attack: T1003.001 { (Persistence) | Scheduled Task } , 
+iv) Simulating the AtomicRed Team attack: T1053.005 { Persistence | Scheduled Task } , T1218.005 { Defense Evasion | MSHTA } , T1003.001 { Credential Access | LSASS Dumping } , T1059.001 { Execution | PowerShell Download } , T1112 { Defense Evasion | Registry Modification }
 
 The project will contain different parts adn each part will contain different steps which help us to go further step by step setup to analyzing different attacks
 
@@ -115,6 +115,10 @@ ix) Here we can see the active forwarding ports and IPs
 # Step 3
 
 i) Now we need to Install AtomicRedTeam so that we can simulate different types of attacks in our Windows server 2019
+<img width="1918" height="878" alt="Atomic Red team install(19)" src="https://github.com/user-attachments/assets/d14755b7-4bed-4619-bcb3-bbe8e859edf9" />
+ 
+ ii) There are different types of attacks in here we will show specific 5 attacks in here (T1053.005, T1218.005, T1003.001, T1059.001, T1112)
+ <img width="1918" height="878" alt="Atomic Red team Attack Techniques(20)" src="https://github.com/user-attachments/assets/40437aed-3829-4ac6-9076-715c27e13695" />
 
 
 
