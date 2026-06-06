@@ -258,7 +258,72 @@ index=* host="WIN-E58857279CK" EventCode=13 TargetObject="*Windows Defender*"
 Here is my Splunk Dashboard named: Windows Server Monitoring containing all the active logs from the Windows Server 2019
 
 <img width="1920" height="1080" alt="Splunk Dashboard 1 (68)" src="https://github.com/user-attachments/assets/68878825-424f-4fd0-b8f7-7c8e30848a0c" />
+<img width="1920" height="1080" alt="Splunk Dashboard 2 (69)" src="https://github.com/user-attachments/assets/fce0ab15-5805-490b-99a4-0470a0f98630" />
+<img width="1920" height="1080" alt="Splunk Dashboard 3 (70)" src="https://github.com/user-attachments/assets/608bb410-5e58-44d0-bd89-4ebde7f88169" />
+<img width="1920" height="1080" alt="Splunk Dashboard 4 (71)" src="https://github.com/user-attachments/assets/b82ddb22-b65c-4699-8947-6d89d12eb559" />
+<img width="1920" height="1080" alt="Splunk Dashboard 5 (72)" src="https://github.com/user-attachments/assets/548d962d-76bc-4e5d-8e7e-e15d26c0bb7a" />
+<img width="1920" height="1080" alt="Splunk Dashboard 6 (73)" src="https://github.com/user-attachments/assets/22a94d90-3556-4c20-be69-4c1ad2522dc0" />
+<img width="1920" height="1080" alt="Splunk Dashboard 7 (74)" src="https://github.com/user-attachments/assets/65c156f6-31a8-446a-ae87-3ff345d85f23" />
+<img width="1920" height="1080" alt="Splunk Dashboard 8 (75)" src="https://github.com/user-attachments/assets/e4702f24-949e-45f3-80e7-aae88723beaf" />
+<img width="1920" height="1080" alt="Splunk Dashboard 9 (76)" src="https://github.com/user-attachments/assets/570ae8da-b329-4311-84a3-418e3a45c5b8" />
+<img width="1920" height="1080" alt="Splunk Dashboard 10 (77)" src="https://github.com/user-attachments/assets/7176cf83-ad76-46c5-b00c-ed7c672e96f5" />
+<img width="1920" height="1080" alt="Splunk Dashboard 11 (78)" src="https://github.com/user-attachments/assets/581b5181-9f97-4afc-b217-a00d4e236fa3" />
+<img width="1920" height="1080" alt="Splunk Dashboard 12 (79)" src="https://github.com/user-attachments/assets/6f09acff-4927-41ab-af9f-8cae6626a472" />
+<img width="1920" height="1080" alt="Splunk Dashboard 13 (80)" src="https://github.com/user-attachments/assets/b5e1a102-9b4f-4d62-a713-bb81c2553c2f" />
+<img width="1920" height="1080" alt="Splunk Dashboard 14 (81)" src="https://github.com/user-attachments/assets/223b290c-5a29-4a13-9093-7a8c0a952e1f" />
+<img width="1920" height="1080" alt="Splunk Dashboard 15 (82)" src="https://github.com/user-attachments/assets/90a1a75a-6cff-45f0-ab2c-44a0bd23254e" />
+<img width="1920" height="1080" alt="Splunk Dashboard 16 (83)" src="https://github.com/user-attachments/assets/945c45d3-7620-424a-ab95-a22656a796fe" />
+<img width="1920" height="1080" alt="Splunk Dashboard 17 (84)" src="https://github.com/user-attachments/assets/8ccf9cad-7c8e-4b6b-b75d-7b2ad60011b6" />
+<img width="1920" height="1080" alt="Splunk Dashboard 18 (85)" src="https://github.com/user-attachments/assets/253e0aa8-76f7-4687-bf4b-e46dc0de67c8" />
+<img width="1920" height="1080" alt="Splunk Dashboard 19 (86)" src="https://github.com/user-attachments/assets/86faca1d-f0c0-4ffe-a6db-63a2b0d8def7" />
+<img width="1920" height="1080" alt="Splunk Dashboard 20 (87)" src="https://github.com/user-attachments/assets/c41d9298-a495-4c84-9133-0d144a837a4d" />
+<img width="1920" height="1080" alt="Splunk Dashboard 21 (88)" src="https://github.com/user-attachments/assets/47b3af13-7073-48c3-9416-3c8202f87bba" />
+<img width="1920" height="1080" alt="Splunk Dashboard 22 (89)" src="https://github.com/user-attachments/assets/6233271f-ea7a-490f-9f1d-7bdaf09a01e4" />
+<img width="1920" height="1080" alt="Splunk Dashboard 23 (90)" src="https://github.com/user-attachments/assets/9141ad84-60a9-4586-89e7-9032279af8ec" />
+<img width="1920" height="1080" alt="Splunk Dashboard 24 (91)" src="https://github.com/user-attachments/assets/e5556ee4-f0ae-418f-9a4c-4a2a05089229" />
+<img width="1920" height="1080" alt="Splunk Dashboard 25 (92)" src="https://github.com/user-attachments/assets/8ecb87b5-8a05-4017-a0ff-c494ced75744" />
+<img width="1920" height="1080" alt="Splunk Dashboard 26 (93)" src="https://github.com/user-attachments/assets/011114a1-9768-4ac5-bea3-73e97949b537" />
+<img width="1920" height="1080" alt="Splunk Dashboard 27 (94)" src="https://github.com/user-attachments/assets/6724c06e-2311-4d36-b044-dbccabdadf41" />
+<img width="1920" height="1080" alt="Splunk Dashboard 28 (95)" src="https://github.com/user-attachments/assets/7e95e103-6725-470c-b42a-75ab4af3456f" />
+<img width="1920" height="1080" alt="Splunk Dashboard 29 (96)" src="https://github.com/user-attachments/assets/672fa8ff-3614-4afc-8c6c-d4ed72e1e08e" />
+<img width="1920" height="1080" alt="Splunk Dashboard 30 (97)" src="https://github.com/user-attachments/assets/2f95d56b-1f9a-4a5b-aa2f-9a4394e0a54b" />
 
+# Part 6: Final Thoughts
+--------------------------
+From my entire project, the most helpful Sysmon Event IDs for each detection of attacks were:
+
+1) T1053.005 – Scheduled Task/Job:
+
+i) Most Helpful Event ID: Sysmon Event ID 1 (Process Creation)
+ii) Reason:
+Event ID 1 was the most useful for detecting scheduled task abuse because it records the execution of schtasks.exe and PowerShell scheduled task commands. The event provides important details such as the process name, command line arguments, parent process, user account, and timestamp.
+
+2) T1218.005 – Mshta
+
+i) Most Helpful Event ID: Sysmon Event ID 1 (Process Creation)
+ii) Reason:
+Event ID 1 captures the execution of mshta.exe, including the command line used to launch the process. This allows analysts to identify suspicious script execution through the Microsoft HTML Application Host.
+
+3) T1003.001 – LSASS Credential Dumping
+
+i) Most Helpful Event ID: Sysmon Event ID 10 (Process Access)
+ii) Reason:
+Event ID 10 records when a process attempts to access another process. It is particularly useful for detecting credential dumping because it logs attempts to access lsass.exe, a common target used by tools such as Mimikatz.
+
+4) T1059.001 – PowerShell
+
+i) Most Helpful Event ID: Sysmon Event ID 1 (Process Creation)
+ii) Reason:
+Event ID 1 captures PowerShell execution, including command-line arguments, encoded commands, parent-child process relationships, and execution context. This makes it one of the most valuable events for detecting malicious PowerShell activity.
+
+5) T1112 – Modify Registry
+
+i) Most Helpful Event ID: Sysmon Event ID 13 (Registry Value Set)
+ii) Reason:
+Event ID 13 records registry value modifications and provides details about the modified registry key, the new value, and the process responsible for the change. This event is highly effective for detecting registry-based persistence and configuration changes.
+
+# Summary:
+During the attack simulations, Sysmon Event IDs 1, 10, and 13 were the most valuable telemetry sources. Event ID 1 provided visibility into process execution, Event ID 10 helped identify credential access attempts against LSASS, and Event ID 13 captured registry modifications used for persistence. Together, these events enabled effective detection and analysis of the Atomic Red Team attack scenarios within the Splunk monitoring environment.
 
 
 
