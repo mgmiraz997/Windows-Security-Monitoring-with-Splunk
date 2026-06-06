@@ -135,6 +135,33 @@ v) Here you can see that I am testing to call all the logs of my windows server 
 
 # Step 1:
 
+i) First we will simulate the 1st attack which is { ATTACK 1 — Scheduled Task Persistence }. Here is the simulation of 1st attack:
+
+ii) Attack code: Invoke-AtomicTest T1053.005
+Event ID 1
+
+<img width="1918" height="878" alt="1st attack simulation 1 (25)" src="https://github.com/user-attachments/assets/289c3eac-7316-44a2-aece-520939b9212c" />
+<img width="1918" height="878" alt="1st attack simulation 2 (26)" src="https://github.com/user-attachments/assets/fe2df0a8-4acf-42a4-9f8b-576390ca3a9c" />
+
+iii) With the help of this query, we can see the logs and changes in the windows system
+Query: 
+index=* host="WIN-E58857279CK" EventCode=1 Image="*schtasks.exe"
+| table _time Image CommandLine ParentImage User
+
+<img width="1918" height="878" alt="1st Attack result 1 (27)" src="https://github.com/user-attachments/assets/624ee843-ffc8-4028-a0b2-091020570b95" />
+<img width="1918" height="878" alt="1st Attack result 2 (28)" src="https://github.com/user-attachments/assets/7d8f5d2c-95d8-4551-9837-b57a225c97a1" />
+<img width="1918" height="878" alt="1st Attack result 3 (29)" src="https://github.com/user-attachments/assets/07d15a25-4003-400a-b82f-94b54440ba4f" />
+<img width="1918" height="878" alt="1st Attack result 4 (30)" src="https://github.com/user-attachments/assets/ec2ebc15-5e03-4fb7-b059-2aa8b977e130" />
+
+# Step 2
+
+i) Next we will simulate the 2nd attack which is { ATTACK 2 — MSHTA Execution }. Here is the simulationof 2nd attack:
+
+ii) Attack code: Invoke-AtomicTest T1218.005
+
+
+
+
 
 
 
