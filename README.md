@@ -138,12 +138,12 @@ v) Here you can see that I am testing to call all the logs of my windows server 
 i) First we will simulate the 1st attack which is { ATTACK 1 — Scheduled Task Persistence }. Here is the simulation of 1st attack:
 
 ii) Attack code: Invoke-AtomicTest T1053.005
-Event ID 1
+iii) Event ID 1
 
 <img width="1918" height="878" alt="1st attack simulation 1 (25)" src="https://github.com/user-attachments/assets/289c3eac-7316-44a2-aece-520939b9212c" />
 <img width="1918" height="878" alt="1st attack simulation 2 (26)" src="https://github.com/user-attachments/assets/fe2df0a8-4acf-42a4-9f8b-576390ca3a9c" />
 
-iii) With the help of this query, we can see the logs and changes in the windows system
+iv) With the help of this query, we can see the logs and changes in the windows system
 Query: 
 index=* host="WIN-E58857279CK" EventCode=1 Image="*schtasks.exe"
 | table _time Image CommandLine ParentImage User
@@ -155,9 +155,114 @@ index=* host="WIN-E58857279CK" EventCode=1 Image="*schtasks.exe"
 
 # Step 2
 
-i) Next we will simulate the 2nd attack which is { ATTACK 2 — MSHTA Execution }. Here is the simulationof 2nd attack:
+i) Next we will simulate the 2nd attack which is { ATTACK 2 — MSHTA Execution }. Here is the simulation of 2nd attack:
 
 ii) Attack code: Invoke-AtomicTest T1218.005
+iii) Event ID 1
+
+<img width="1920" height="1080" alt="2nd attack simulation 1 (31)" src="https://github.com/user-attachments/assets/1212f963-52e6-46ed-bbbe-ee274df3131b" />
+<img width="1920" height="1080" alt="2nd attack simulation 2 (32)" src="https://github.com/user-attachments/assets/4e8bc7af-2d4f-4482-a46b-5fa9de367706" />
+
+iv) With the help of this query, we can see the logs and changes in the windows system
+Query:
+index=* host="WIN-E58857279CK" EventCode=1 Image="*mshta.exe"
+| table _time Image CommandLine ParentImage User
+
+<img width="1920" height="1080" alt="2nd attack result 1 (33)" src="https://github.com/user-attachments/assets/3d4d0c73-caaa-48d1-ac27-9fc5dac4b7f1" />
+<img width="1920" height="1080" alt="2nd attack result 2 (34)" src="https://github.com/user-attachments/assets/028820ed-b54c-495c-bfc5-0264af356e87" />
+
+# Step 3
+
+i) Next we will simulate the 3rd attack which is { ATTACK 3 — LSASS Dumping }. Here is the simulation of 3rd attack:
+
+ii) Attack code: Invoke-AtomicTest T1003.001
+iii) Event ID 10
+
+<img width="1920" height="1080" alt="3rd attack simulation 1 (35)" src="https://github.com/user-attachments/assets/d10d4889-9e16-4985-a71e-d1f7737bc902" />
+<img width="1920" height="1080" alt="3rd attack simulation 2 (36)" src="https://github.com/user-attachments/assets/43dd16f9-0be2-4e91-9b90-d3d16c0dbe94" />
+<img width="1920" height="1080" alt="3rd attack simulation 3 (37)" src="https://github.com/user-attachments/assets/dd68cdaa-d0c0-4e3a-9a2e-a9d0fcec9dad" />
+<img width="1920" height="1080" alt="3rd attack simulation 4 (38)" src="https://github.com/user-attachments/assets/02f864da-bfe6-443a-b959-9aae91269acc" />
+<img width="1920" height="1080" alt="3rd attack simulation 5 (39)" src="https://github.com/user-attachments/assets/f8321fa6-3483-4d93-8de5-942a8e6546eb" />
+<img width="1920" height="1080" alt="3rd attack simulation 6 (40)" src="https://github.com/user-attachments/assets/a40edd82-0429-4ec7-a81e-7ace3fadc552" />
+<img width="1920" height="1080" alt="3rd attack simulation 7 (41)" src="https://github.com/user-attachments/assets/3d78822a-5583-4a55-a0e8-ec85d3042468" />
+
+iv) With the help of this query, we can see the logs and changes in the windows system:
+Query:
+index=* host="WIN-E58857279CK" EventCode=10 TargetImage="*lsass.exe"
+| table _time SourceImage TargetImage GrantedAccess User
+
+<img width="1920" height="1080" alt="3rd attack result 1 (42)" src="https://github.com/user-attachments/assets/4efe380f-e83e-41f6-a99a-2a65c24d937f" />
+<img width="1920" height="1080" alt="3rd attack result 2 (43)" src="https://github.com/user-attachments/assets/1a281818-1398-4a9c-aec1-f17624b2adf5" />
+<img width="1920" height="1080" alt="3rd attack result 3 (44)" src="https://github.com/user-attachments/assets/403817c1-3fb3-401f-af7d-72b92c4a1448" />
+
+
+# Step 4
+
+i) Next we will simulate the 4th attack which is { ATTACK 4 — PowerShell Download Execution }. Here is the simulation of 4th attack:
+
+ii) Attack code: Invoke-AtomicTest T1059.001
+iii) Event ID 1
+
+<img width="1920" height="1080" alt="4th attack simulation 1 (45)" src="https://github.com/user-attachments/assets/bb92e8e8-a862-46cf-a9c3-5a17c947c03c" />
+<img width="1920" height="1080" alt="4th attack simulation 2 (46)" src="https://github.com/user-attachments/assets/6c171fa9-5f47-4aaa-9541-1d4e85c480e4" />
+<img width="1920" height="1080" alt="4th attack simulation 3 (47)" src="https://github.com/user-attachments/assets/44b445b5-a64e-4d28-9f97-62db35a02d1e" />
+<img width="1920" height="1080" alt="4th attack simulation 4 (48)" src="https://github.com/user-attachments/assets/aee4b533-6368-4448-b761-48ebcf3a6788" />
+<img width="1920" height="1080" alt="4th attack simulation 5 (49)" src="https://github.com/user-attachments/assets/fe680950-7976-49ed-92d9-81e860081677" />
+<img width="1920" height="1080" alt="4th attack simulation 6 (50)" src="https://github.com/user-attachments/assets/68056cb0-0ffe-4ceb-bb7e-6addc1308c6e" />
+<img width="1920" height="1080" alt="4th attack simulation 7 (51)" src="https://github.com/user-attachments/assets/de351202-b109-42f5-9d72-46bca1820b76" />
+<img width="1920" height="1080" alt="4th attack simulation 8 (52)" src="https://github.com/user-attachments/assets/8b9c37ac-6237-4962-9a0f-4b4e36a655d0" />
+<img width="1920" height="1080" alt="4th attack simulation 9 (53)" src="https://github.com/user-attachments/assets/2d54309f-14a4-44ba-89fd-6bbdd4a3c480" />
+<img width="1920" height="1080" alt="4th attack simulation 10 (54)" src="https://github.com/user-attachments/assets/f08bd6a6-7263-4b05-9f79-1ccaf3bbff10" />
+<img width="1920" height="1080" alt="4th attack simulation 11 (55)" src="https://github.com/user-attachments/assets/9b6a7e0b-c48f-4547-a7f1-fbd141f97c8f" />
+<img width="1920" height="1080" alt="4th attack simulation 12 (56)" src="https://github.com/user-attachments/assets/9c363f35-53f4-4f38-97bc-eee1b65230cc" />
+
+iv) With the help of this query, we can see the logs and changes in the windows system:
+Query:
+index=* host="WIN-E58857279CK" EventCode=1 Image="*powershell.exe"
+| search CommandLine="*DownloadString*"
+| table _time Image CommandLine ParentImage User
+
+<img width="1920" height="1080" alt="4rd attack result 1 (57)" src="https://github.com/user-attachments/assets/ade7cd82-340d-4192-968d-dc7cd898c810" />
+
+# Step 5
+
+i) Finally, we will simulate the 5th attack which is { ATTACK 5 — Registry Modification }. Here is the simulation of 5th attack:
+
+ii) Attack code: Invoke-AtomicTest T1112
+iii) Event ID 13
+
+<img width="1920" height="1080" alt="5th attack simulation 1 (58)" src="https://github.com/user-attachments/assets/a18e1750-abfb-40d4-bd8a-88ee56991c9e" />
+<img width="1920" height="1080" alt="5th attack simulation 2 (59)" src="https://github.com/user-attachments/assets/eb629eb1-a64c-4c76-8e65-14a491323e94" />
+<img width="1920" height="1080" alt="5th attack simulation 3 (60)" src="https://github.com/user-attachments/assets/d2d7b822-f044-4cd7-a668-9b4f768db4a7" />
+<img width="1920" height="1080" alt="5th attack simulation 4 (61)" src="https://github.com/user-attachments/assets/37db720e-7d36-46fc-8e31-f943135e675d" />
+
+iv) With the help of this query, we can see the logs and changes in the windows system:
+Query 1 ( For detecting every details ):
+index=* host="WIN-E58857279CK" EventCode=13
+| table _time Image TargetObject Details User
+
+<img width="1920" height="1080" alt="5rd attack result 1 1 (62)" src="https://github.com/user-attachments/assets/dd40c2f0-a143-4244-938c-a91c0eddebab" />
+<img width="1920" height="1080" alt="5rd attack result 1 2 (63)" src="https://github.com/user-attachments/assets/a481e589-9868-4fea-825c-482a5f22b62c" />
+<img width="1920" height="1080" alt="5rd attack result 1 3 (64)" src="https://github.com/user-attachments/assets/7799bba8-f27e-4816-92b4-e0c556fd946a" />
+
+query 2 ( For defender registry modifications )
+index=* host="WIN-E58857279CK" EventCode=13 TargetObject="*Windows Defender*"
+| table _time Image TargetObject Details
+
+<img width="1920" height="1080" alt="5rd attack result 2 1 (65)" src="https://github.com/user-attachments/assets/87fc2922-5aeb-40bc-8f3f-b9b3c8757ba2" />
+<img width="1920" height="1080" alt="5rd attack result 2 2 (66)" src="https://github.com/user-attachments/assets/94d12853-d02f-4c43-8c33-a09326f093dd" />
+<img width="1920" height="1080" alt="5rd attack result 2 3 (67)" src="https://github.com/user-attachments/assets/5a110182-a99b-4702-a4ad-093f4e367115" />
+
+# Part 5: Splunk Dashboard
+----------------------------
+Here is my Splunk Dashboard named: Windows Server Monitoring containing all the active logs from the Windows Server 2019
+
+<img width="1920" height="1080" alt="Splunk Dashboard 1 (68)" src="https://github.com/user-attachments/assets/68878825-424f-4fd0-b8f7-7c8e30848a0c" />
+
+
+
+
+
 
 
 
